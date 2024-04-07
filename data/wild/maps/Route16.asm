@@ -10,6 +10,8 @@ Route16WildMons:
 	db 24, FEAROW
 	db 25, RATICATE
 	db 26, RATICATE
+	db 22, RATTATA
+	db 24, RATICATE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

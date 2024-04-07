@@ -418,6 +418,16 @@ _GolbatDexEntry::
 	next "and suck blood"
 	dex
 
+_CrobatDexEntry::
+	text "As a result of its"
+	next "pursuit of faster,"
+	next "yet more silent"
+	
+	page "flight, a new set"
+	next "of wings grew on"
+	next "its hind legs"
+	dex
+
 _OddishDexEntry::
 	text "It may be mistaken"
 	next "for a clump of"
@@ -1116,6 +1126,16 @@ _RhydonDexEntry::
 	next "hide even repels"
 	next "molten lava"
 	dex
+	
+_RhyperiorDexEntry::
+	text "It puts rocks in"
+	next "holes in its palms"
+	next "and uses its "
+	
+	page "muscles to shoot"
+	next "them. GEODUDE are"
+	next "shot at rare times."
+	dex
 
 _ChanseyDexEntry::
 	text "A gentle and kind-"
@@ -1357,6 +1377,16 @@ _FlareonDexEntry::
 	next "3,000F degrees"
 	dex
 
+_EspeonDexEntry::
+	text "It uses the fine"
+	next "hair that covers"
+	next "its body to sense"
+	
+	page "air currents and"
+	next "predict its enemy's"
+	next "actions."
+	dex
+	
 _PorygonDexEntry::
 	text "The only #MON"
 	next "people anticipate"

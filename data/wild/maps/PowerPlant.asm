@@ -10,6 +10,8 @@ PowerPlantWildMons:
 	db 38, MAGNETON
 	db 33, MUK
 	db 37, MUK
+	db 33, ELECTABUZZ
+	db 36, ELECTABUZZ
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

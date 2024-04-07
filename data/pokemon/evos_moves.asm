@@ -40,8 +40,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw CrobatEvosMoves
+	dw RhyperiorEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -59,7 +59,7 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw EspeonEvosMoves
 	dw MagmarEvosMoves
 	dw MissingNo34EvosMoves
 	dw ElectabuzzEvosMoves
@@ -204,7 +204,7 @@ EvosMovesPointerTable:
 
 RhydonEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 55, RHYPERIOR
 ; Learnset
 	db 30, STOMP
 	db 35, TAIL_WHIP
@@ -554,16 +554,28 @@ TangelaEvosMoves:
 	db 48, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+CrobatEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, SUPERSONIC
+	db 15, BITE
+	db 21, CONFUSE_RAY
+	db 33, WING_ATTACK
+	db 44, HAZE
+	db 55, SLUDGE
 	db 0
 
-MissingNo20EvosMoves:
+RhyperiorEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 30, STOMP
+	db 35, TAIL_WHIP
+	db 40, FURY_ATTACK
+	db 48, HORN_DRILL
+	db 55, LEER
+	db 64, TAKE_DOWN
 	db 0
 
 GrowlitheEvosMoves:
@@ -628,7 +640,7 @@ SlowpokeEvosMoves:
 
 KadabraEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, ALAKAZAM
+	db EVOLVE_LEVEL, 36, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -641,7 +653,7 @@ KadabraEvosMoves:
 
 GravelerEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GOLEM
+	db EVOLVE_LEVEL, 42, GOLEM
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -667,7 +679,7 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, MACHAMP
+	db EVOLVE_LEVEL, 44, MACHAMP
 	db 0
 ; Learnset
 	db 20, LOW_KICK
@@ -769,10 +781,17 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+EspeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, SAND_ATTACK
+	db 16, CONFUSION
+	db 23, QUICK_ATTACK
+	db 30, SWIFT
+	db 36, PSYBEAM
+	db 42, TAKE_DOWN
+	db 47, PSYCHIC_M
 	db 0
 
 MagmarEvosMoves:
@@ -1270,6 +1289,7 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
+	db EVOLVE_ITEM, SUN_STONE, 1, ESPEON
 	db 0
 ; Learnset
 	db 8, SAND_ATTACK
@@ -1567,7 +1587,7 @@ HypnoEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 38, CROBAT
 ; Learnset
 	db 10, SUPERSONIC
 	db 15, BITE
@@ -1720,7 +1740,7 @@ MissingNo92EvosMoves:
 
 HaunterEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GENGAR
+	db EVOLVE_LEVEL, 40, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS

@@ -313,7 +313,6 @@ wPrinterQueueLength:: db
 wPrinterDataEnd::
 
 wPrinterPokedexEntryTextPointer:: dw
-	ds 2
 wPrinterPokedexMonIsOwned:: db
 	ds 226
 UNION
@@ -378,8 +377,6 @@ wPlayerMonNumber:: db
 
 ; the address of the menu cursor's current location within wTileMap
 wMenuCursorLocation:: dw
-
-	ds 2
 
 ; how many times should HandleMenuInput poll the joypad state before it returns?
 wMenuJoypadPollCount:: db
@@ -1708,7 +1705,7 @@ wMonHBackSprite:: dw
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
 wMonHLearnset:: flag_array NUM_TMS + NUM_HMS
-	ds 1
+wMonHPicBank:: db
 wMonHeaderEnd::
 
 ; saved at the start of a battle and then written back at the end of the battle

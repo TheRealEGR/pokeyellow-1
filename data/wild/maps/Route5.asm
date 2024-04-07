@@ -10,6 +10,8 @@ Route5WildMons:
 	db  3, JIGGLYPUFF
 	db  5, JIGGLYPUFF
 	db  7, JIGGLYPUFF
+	db 10, MEOWTH
+	db 16, MEOWTH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
